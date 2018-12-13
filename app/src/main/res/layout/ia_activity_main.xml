@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Endika Aguilera on 26/11/2018.
+  ~ Copyright: (c) 2018 Endika Aguilera. All rights reserved.
+  -->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#d1d1d1"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.endikaaguilera.mvpitunesapi.global.custom.PlaceholderRecyclerView
+        android:id="@+id/iaRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/no_margin"
+        android:descendantFocusability="blocksDescendants"
+        android:padding="@dimen/no_margin"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/playingTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <com.endikaaguilera.mvpitunesapi.global.custom.SuperTextView
+        android:id="@+id/playingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#323232"
+        android:ellipsize="end"
+        android:gravity="start|center_vertical"
+        android:maxLines="1"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="@string/loading"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+</android.support.constraint.ConstraintLayout>

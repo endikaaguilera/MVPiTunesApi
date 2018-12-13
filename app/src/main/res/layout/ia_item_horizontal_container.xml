@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Endika Aguilera on 26/11/2018.
+  ~ Copyright: (c) 2018 Endika Aguilera. All rights reserved.
+  -->
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/ia_horizontal_recycler_view_width"
+    android:layout_height="200dp"
+    android:clipChildren="true"
+    android:clipToPadding="false"
+    android:foreground="?selectableItemBackgroundBorderless"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cardContentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/thumbnailImageView"
+            android:layout_width="@dimen/ia_image_view_width"
+            android:layout_height="@dimen/ia_image_view_height"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_ia_placeholder" />
+
+        <TextView
+            android:id="@+id/artistNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="@dimen/ia_card_view_texts_margin"
+            android:paddingEnd="@dimen/ia_card_view_texts_margin"
+            android:singleLine="true"
+            android:textColor="@color/colorTextDark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/trackNameTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thumbnailImageView"
+            tools:text="Dummy Song Title" />
+
+        <TextView
+            android:id="@+id/trackNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingStart="@dimen/ia_card_view_texts_margin"
+            android:paddingEnd="@dimen/ia_card_view_texts_margin"
+            android:singleLine="true"
+            android:textColor="@color/colorTextDark"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/artistNameTextView"
+            tools:text="Dummy Author Name" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/shareButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/playButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_share_24dp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/playButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/viewButton"
+            app:layout_constraintStart_toEndOf="@id/shareButton"
+            app:srcCompat="@drawable/ic_play_24dp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/viewButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:foreground="?selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/playButton"
+            app:srcCompat="@drawable/ic_eye_24dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

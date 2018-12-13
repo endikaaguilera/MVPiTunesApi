@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="card_view_margin">12dp</dimen>
+
+    <dimen name="card_corner_radius">8dp</dimen>
+
+    <dimen name="card_elevation">4dp</dimen>
+
+    <dimen name="placeholder_card_height">480dp</dimen>
+
+    <dimen name="button_width_small">100dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="button_margin">18dp</dimen>
+
+    <dimen name="no_margin">0dp</dimen>
+
+    <dimen name="ia_recycler_view_item_spacing">12dp</dimen>
+    <dimen name="ia_card_view_texts_margin">8dp</dimen>
+    <dimen name="ia_horizontal_container_height">280dp</dimen>
+    <dimen name="ia_horizontal_recycler_view_width">140dp</dimen>
+    <dimen name="ia_image_view_width">140dp</dimen>
+    <dimen name="ia_image_view_height">100dp</dimen>
+    <dimen name="ia_horizontal_recycler_view_height">220dp</dimen>
+
+    <!-- NEW BAKING APP -->
+
+</resources>

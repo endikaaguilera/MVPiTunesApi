@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MVP iTunesApi</string>
+
+    <string name="retry">Retry</string>
+    <string name="no_results_found">No results found</string>
+    <string name="loading_data">Loading data</string>
+    <string name="no_data">No results found</string>
+    <string name="no_internet">Connection error</string>
+    <string name="error">Something went wrong</string>
+    <string name="loading">Loading…</string>
+    <string name="share_intent_header">Share:</string>
+    <string name="itunes_api">iTunes Api</string>
+    <string name="placeholder_counter">0</string>
+    <string name="loading_track_error">Loading track error</string>
+
+</resources>
